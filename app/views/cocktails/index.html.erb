@@ -1,0 +1,33 @@
+<div class="wrapper ">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path "john-arano-_qADvinJi20-unsplash.jpg" %>');">
+    <div class="container">
+      <h1>A list of <strong>delicous</strong> and <strong>creative cocktails</strong>!</h1>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "john-arano-_qADvinJi20-unsplash.jpg" %>')">
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        </div>
+      <% end %>
+    </div>
+    <div class="text-center my-3">
+    <%= link_to "create a new cocktail", "cocktails/new", class: "btn btn-gradient" %>
+    </div>
+</div>
+  <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Drink responsible <i class="fas fa-heart"></i>
+  </div>
+    </div>
+
+

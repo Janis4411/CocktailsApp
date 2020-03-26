@@ -2,6 +2,8 @@
   "name": "CocktailsApp",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.4.1"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "bootstrap": "^4.4.1",
+    "fontawesome": "^5.6.3"
   }
 }
